@@ -11,7 +11,7 @@ export const content = {
   'nav.method': { fr: 'Méthode', en: 'Method' },
   'nav.work': { fr: 'Exemples', en: 'Examples' },
   'nav.contact': { fr: 'Contact', en: 'Contact' },
-  'brand.role': { fr: 'IA &amp; automatisation pour PME', en: 'AI &amp; automation for SMEs' },
+  'brand.role': { fr: 'IA &amp; automatisation', en: 'AI &amp; automation' },
   'skip': { fr: 'Aller au contenu', en: 'Skip to content' },
 
   // ── hero
