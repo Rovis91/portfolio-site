@@ -1,0 +1,354 @@
+<!doctype html>
+<!-- Portfolio Antoine Hostier. Copy: src/content.js (FR/EN). -->
+<html lang="fr" data-lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Antoine Hostier — IA et automatisation pour PME</title>
+  <meta name="description" content="Vos tâches répétitives tournent seules, vous gardez les décisions. Des outils IA et des automatisations sur mesure, construits avec vos équipes." />
+  <meta name="theme-color" content="#efebe2" />
+  <meta name="author" content="Antoine Hostier" />
+  <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="%VITE_SITE_URL%/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Antoine Hostier" />
+  <meta property="og:title" content="Antoine Hostier — IA et automatisation pour PME" />
+  <meta property="og:description" content="Vos tâches répétitives tournent seules, vous gardez les décisions. Des outils IA et des automatisations sur mesure, construits avec vos équipes." />
+  <meta property="og:locale" content="fr_FR" />
+  <meta property="og:locale:alternate" content="en_US" />
+  <meta property="og:url" content="%VITE_SITE_URL%/" />
+  <meta property="og:image" content="%VITE_SITE_URL%/og.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:image:alt" content="Antoine Hostier — IA et automatisation pour PME" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Antoine Hostier — IA et automatisation pour PME" />
+  <meta name="twitter:description" content="Vos tâches répétitives tournent seules, vous gardez les décisions. Des outils IA et des automatisations sur mesure, construits avec vos équipes." />
+  <meta name="twitter:image" content="%VITE_SITE_URL%/og.png" />
+  <meta name="twitter:image:alt" content="Antoine Hostier — IA et automatisation pour PME" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "%VITE_SITE_URL%/#antoine",
+        "name": "Antoine Hostier",
+        "jobTitle": "Consultant IA et automatisation",
+        "url": "%VITE_SITE_URL%/",
+        "image": "%VITE_SITE_URL%/antoine-192.webp",
+        "email": "mailto:netechoppe@proton.me",
+        "sameAs": ["https://www.linkedin.com/in/antoine-hostier", "https://github.com/Rovis91", "https://www.malt.fr/profile/antoinehostier"],
+        "knowsLanguage": ["fr", "en"]
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "%VITE_SITE_URL%/#service",
+        "name": "DirectivAI",
+        "description": "Outils IA et automatisations sur mesure pour PME.",
+        "url": "%VITE_SITE_URL%/",
+        "image": "%VITE_SITE_URL%/og.png",
+        "founder": { "@id": "%VITE_SITE_URL%/#antoine" },
+        "address": { "@type": "PostalAddress", "streetAddress": "9 rue des Colonnes", "postalCode": "75002", "addressLocality": "Paris", "addressCountry": "FR" },
+        "areaServed": "FR",
+        "availableLanguage": ["fr", "en"]
+      }
+    ]
+  }
+  </script>
+  <script>
+    // Language before first paint: saved manual choice > browser preference. Never IP.
+    (function () {
+      var d = document.documentElement, l
+      try { l = localStorage.getItem('ah.lang') } catch (e) {}
+      if (l !== 'fr' && l !== 'en') {
+        var p = (navigator.languages && navigator.languages[0]) || navigator.language || ''
+        l = /^fr(-|$)/i.test(p) ? 'fr' : 'en'
+      }
+      d.lang = l; d.setAttribute('data-lang', l); d.classList.add('js')
+      if (l === 'en') document.title = 'Antoine Hostier — AI and automation for SMEs'
+    })()
+  </script>
+  <link rel="preload" href="/fonts/archivo.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="icon" href="/favicon.ico" sizes="48x48" />
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link rel="stylesheet" href="/src/style.css" />
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">{{skip}}</a>
+
+  <header class="top" id="top">
+    <a class="brand" href="#main">
+      <span class="brand-mark" aria-hidden="true"><img class="brand-face" src="/antoine-96.webp" width="32" height="32" alt="" decoding="async" /></span>
+      <span class="brand-name">Antoine Hostier</span>
+      <span class="brand-role">{{brand.role}}</span>
+    </a>
+    <nav class="nav" data-i18n-aria="nav" aria-label="Navigation principale">
+      <a href="#problemes">{{nav.problems}}</a>
+      <a href="#methode">{{nav.method}}</a>
+      <a href="#exemples">{{nav.work}}</a>
+    </nav>
+    <div class="top-actions">
+      <div class="lang" role="group" data-i18n-aria="langSwitch" aria-label="Changer de langue">
+        <button type="button" data-set-lang="fr" lang="fr" aria-label="Français">FR</button>
+        <button type="button" data-set-lang="en" lang="en" aria-label="English">EN</button>
+      </div>
+      <a class="top-contact" href="#contact">{{nav.contact}}</a>
+    </div>
+    <div class="progress" aria-hidden="true"><i></i></div>
+  </header>
+
+  <main id="main">
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-text">
+        <!-- a face first: the person behind the work, before the pitch -->
+        <p class="hero-by">
+          <span class="face"><img src="/antoine-192.webp" srcset="/antoine-96.webp 96w, /antoine-192.webp 192w" sizes="(min-width: 1024px) 76px, 60px" width="60" height="60" alt="" fetchpriority="high" decoding="async" /></span>
+          <span class="hero-by-t"><b>Antoine Hostier</b><span>{{brand.role}}</span></span>
+        </p>
+        <h1 id="hero-title" class="h1">{{hero.title}}</h1>
+        <p class="hero-sub">{{hero.sub}}</p>
+      </div>
+
+      <figure class="fig1">
+        <!-- "your Monday", before / after. Without JS the CSS shows the after state;
+             main.js plays the switch while the figure is in view (reduced motion: after, still). -->
+        <div class="hl" role="group" data-i18n-aria="figHero" aria-label="Exemple : votre lundi.">
+          <div class="hl-paper">
+            <p class="hl-head"><span>{{h.day}}</span><b class="hl-n"><span class="hl-n0">6 h 30</span><span class="hl-n1">20 min</span></b></p>
+            <ol>
+              <li style="--i:0"><span class="hl-t">{{h.t0}}</span><span class="hl-m">1 h 30</span><b class="hl-auto" aria-hidden="true">auto</b></li>
+              <li style="--i:1"><span class="hl-t">{{h.t1}}</span><span class="hl-m">1 h 10</span><b class="hl-auto" aria-hidden="true">auto</b></li>
+              <li style="--i:2"><span class="hl-t">{{h.t2}}</span><span class="hl-m">1 h</span><b class="hl-auto" aria-hidden="true">auto</b></li>
+              <li style="--i:3"><span class="hl-t">{{h.t3}}</span><span class="hl-m">50 min</span><b class="hl-auto" aria-hidden="true">auto</b></li>
+              <li style="--i:4"><span class="hl-t">{{h.t4}}</span><span class="hl-m">45 min</span><b class="hl-auto" aria-hidden="true">auto</b></li>
+              <li style="--i:5"><span class="hl-t">{{h.t5}}</span><span class="hl-m">40 min</span><b class="hl-auto" aria-hidden="true">auto</b></li>
+              <li style="--i:6"><span class="hl-t">{{h.t6}}</span><span class="hl-m">35 min</span><b class="hl-auto" aria-hidden="true">auto</b></li>
+              <li class="hl-me" style="--i:7"><span class="hl-t">{{h.me}}</span><span class="hl-m">20 min</span></li>
+            </ol>
+          </div>
+        </div>
+        <figcaption class="hl-note mono">{{h.note}}</figcaption>
+      </figure>
+
+      <div class="ctas">
+        <a class="btn btn-ink" href="https://calendly.com/antoine-rtc3/30min" target="_blank" rel="noopener"><span>{{hero.cta}}</span><i class="arr" aria-hidden="true"></i></a>
+        <a class="btn btn-line" href="#exemples"><span>{{hero.cta2}}</span></a>
+      </div>
+      <p class="reassure mono">{{cta.reassure}}</p>
+    </section>
+
+    <!-- ───────────── §01 PROBLEMS ───────────── -->
+    <section class="sec pb" id="problemes" aria-labelledby="pb-title">
+      <header class="sec-head"><h2 id="pb-title" class="h2">{{pb.title}}</h2></header>
+      <ol class="pb-list">
+        <li class="pb-item">
+          <div class="pb-row">
+            <svg class="glyph g-ai" viewBox="0 0 56 40" aria-hidden="true">
+              <path class="g-spark" d="M10 8l2.5 7.5L20 18l-7.5 2.5L10 28l-2.5-7.5L0 18l7.5-2.5z" />
+              <path class="g-arrow" d="M24 18h7m-3-3 3 3-3 3" />
+              <rect x="36" y="6" width="18" height="24" /><path class="sig" d="M45 12l1.6 4.4L51 18l-4.4 1.6L45 24l-1.6-4.4L39 18l4.4-1.6z" />
+            </svg>
+            <p class="pb-q">{{pb.1}}</p>
+          </div>
+          <p class="pb-a"><span class="pb-k">{{pb.ak}}</span>{{pb.1a}}</p>
+        </li>
+        <li class="pb-item">
+          <div class="pb-row">
+            <svg class="glyph g-loop" viewBox="0 0 56 40" aria-hidden="true">
+              <g class="g-spin"><path d="M28 6a14 14 0 1 1-13.3 9.6" /><path d="M10 13l4.7 2.6 2.4-4.8" /></g>
+              <path class="g-check sig" d="M22 20l4.5 4.5L35 16" />
+            </svg>
+            <p class="pb-q">{{pb.2}}</p>
+          </div>
+          <p class="pb-a"><span class="pb-k">{{pb.ak}}</span>{{pb.2a}}</p>
+        </li>
+        <li class="pb-item">
+          <div class="pb-row">
+            <svg class="glyph g-data" viewBox="0 0 56 40" aria-hidden="true">
+              <rect class="g-bar" x="6" y="26" width="6" height="10" /><rect class="g-bar" x="16" y="20" width="6" height="16" /><rect class="g-bar" x="26" y="13" width="6" height="23" /><rect class="g-bar" x="36" y="8" width="6" height="28" /><rect class="g-bar sig" x="46" y="3" width="6" height="33" />
+            </svg>
+            <p class="pb-q">{{pb.3}}</p>
+          </div>
+          <p class="pb-a"><span class="pb-k">{{pb.ak}}</span>{{pb.3a}}</p>
+        </li>
+        <li class="pb-item">
+          <div class="pb-row">
+            <svg class="glyph g-tools" viewBox="0 0 56 40" aria-hidden="true">
+              <circle class="g-t1" cx="7" cy="9" r="4" /><path class="g-t2" d="M14 34l5-9 5 9z" /><rect class="g-t3" x="3" y="22" width="7" height="7" />
+              <path class="g-arrow" d="M27 20h6m-3-3 3 3-3 3" />
+              <rect x="38" y="6" width="16" height="28" /><path class="sig" d="M41 13h10M41 20h10M41 27h6" />
+            </svg>
+            <p class="pb-q">{{pb.4}}</p>
+          </div>
+          <p class="pb-a"><span class="pb-k">{{pb.ak}}</span>{{pb.4a}}</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ───────────── §02 METHOD: not a template ───────────── -->
+    <section class="sec mt" id="methode" aria-labelledby="mt-title">
+      <header class="sec-head"><h2 id="mt-title" class="h2">{{mt.title}}</h2></header>
+      <div class="fit">
+        <figure class="fit-card fit-tpl">
+          <svg viewBox="0 0 120 70" aria-hidden="true"><path class="fit-slot" d="M8 40H38V22H74V40H112V62H8Z" /><rect class="fit-piece" x="14" y="14" width="92" height="40" /></svg>
+          <figcaption><b>{{mt.tpl}}</b>{{mt.tpl.v}}</figcaption>
+        </figure>
+        <figure class="fit-card fit-ok">
+          <svg viewBox="0 0 120 70" aria-hidden="true"><path class="fit-slot" d="M8 40H38V22H74V40H112V62H8Z" /><path class="fit-piece" d="M8 40H38V22H74V40H112V62H8Z" /></svg>
+          <figcaption><b>{{mt.fit}}</b>{{mt.fit.v}}</figcaption>
+        </figure>
+      </div>
+      <ol class="steps">
+        <li class="st-rail" aria-hidden="true"><i class="st-rail-fill"></i><i class="st-rail-dot"></i></li>
+        <li><span class="st-n">01</span><h3 class="st-t">{{mt.s1.t}}</h3><p>{{mt.s1}}</p><p class="st-x mono">{{mt.s1.x}}</p></li>
+        <li><span class="st-n">02</span><h3 class="st-t">{{mt.s2.t}}</h3><p>{{mt.s2}}</p><p class="st-x mono">{{mt.s2.x}}</p></li>
+        <li><span class="st-n">03</span><h3 class="st-t">{{mt.s3.t}}</h3><p>{{mt.s3}}</p><p class="st-x mono">{{mt.s3.x}}</p></li>
+      </ol>
+      <p class="mt-price">{{mt.price}}</p>
+    </section>
+
+    <!-- ───────────── §03 EXAMPLES: one 3D demo + one sentence ───────────── -->
+    <section class="sec wk dark" id="exemples" aria-labelledby="wk-title">
+      <header class="sec-head"><h2 id="wk-title" class="h2">{{wk.title}}</h2><p class="wk-hint mono">{{wk.hint}}</p></header>
+
+      <article class="ex" id="projet-1" aria-labelledby="c1-h">
+        <h3 class="sr-only" id="c1-h">{{wk.proj}} 01 · {{c1.name}}</h3>
+        <p class="ex-meta"><span class="ex-n">01</span>{{c1.sector}}</p>
+        <p class="ex-one" id="c1-one">{{c1.one}}</p>
+        <p class="ex-result mono"><span class="ex-result-k">{{wk.result}}</span>{{c1.result}}</p>
+        <figure class="plate plate-paper">
+          <div class="stage stage-case" data-fig="ecom" style="--ar:160/100" role="group" data-i18n-aria="figEcom" aria-label="Schéma : Shopify, Meta Ads et Drive branchés sur une seule App interne, qui affiche le chiffre d’affaires par boutique, le ROAS des campagnes et les visuels produits, le dernier en attente de validation par une personne.">
+            <svg class="dg" viewBox="0 0 160 100" aria-hidden="true"><g data-s="0" data-a="wipe"><rect class="k f" x="33" y="8" width="124" height="86"/><path class="k" d="M33 16H157"/><rect class="i" x="36" y="10.75" width="2.5" height="2.5"/><rect class="i" x="40" y="10.75" width="2.5" height="2.5"/><rect class="i" x="44" y="10.75" width="2.5" height="2.5"/></g><g data-s="1" data-i="0" data-a="slide"><rect class="k f" x="3" y="23.5" width="26" height="13"/></g><g data-s="1" data-i="1" data-a="slide"><rect class="k f" x="3" y="45.5" width="26" height="13"/></g><g data-s="1" data-i="2" data-a="slide"><rect class="k f" x="3" y="67.5" width="26" height="13"/></g><g data-s="2" data-a="wipe"><path class="k" d="M29 30H33M29 52H33M29 74H33"/><rect class="k f" x="31.5" y="28.5" width="3" height="3"/><rect class="k f" x="31.5" y="50.5" width="3" height="3"/><rect class="k f" x="31.5" y="72.5" width="3" height="3"/></g><g data-s="3" data-a="pop"><rect class="k f2" x="38" y="22" width="58" height="34"/><path class="th" d="M41 51H93"/></g><g data-s="3" data-i="1" data-a="pop"><rect class="k f2" x="100" y="22" width="53" height="34"/></g><g data-s="3" data-i="2" data-a="pop"><rect class="k f2" x="38" y="62" width="115" height="26"/></g><rect class="i" data-s="4" data-i="0" data-a="grow" x="45" y="44" width="5" height="7"/><rect class="i" data-s="4" data-i="1" data-a="grow" x="53" y="40" width="5" height="11"/><rect class="i" data-s="4" data-i="2" data-a="grow" x="61" y="42" width="5" height="9"/><rect class="i" data-s="4" data-i="3" data-a="grow" x="69" y="36" width="5" height="15"/><rect class="i" data-s="4" data-i="4" data-a="grow" x="77" y="32" width="5" height="19"/><rect class="i" data-s="4" data-i="5" data-a="grow" x="85" y="27" width="5" height="24"/><g data-s="5" data-a="wipe"><polyline class="k" points="104,49 113,45 122,47 131,37 140,39 149,29"/><polyline class="k da" points="104,51 113,50 122,48 131,49 140,46 149,45"/></g><g data-s="6" data-i="0" data-a="pop"><rect class="k f" x="44" y="67" width="16" height="16"/><polyline class="th" points="46,80 50,75 53,78 56,74 58,80"/><circle class="th" cx="55" cy="71" r="1.5"/></g><g data-s="6" data-i="1" data-a="pop"><rect class="k f" x="66" y="67" width="16" height="16"/><polyline class="th" points="68,80 72,75 75,78 78,74 80,80"/><circle class="th" cx="77" cy="71" r="1.5"/></g><g data-s="6" data-i="2" data-a="pop"><rect class="k f" x="88" y="67" width="16" height="16"/><polyline class="th" points="90,80 94,75 97,78 100,74 102,80"/><circle class="th" cx="99" cy="71" r="1.5"/></g><g data-s="6" data-i="3" data-a="pop"><rect class="k f" x="110" y="67" width="16" height="16"/><polyline class="th" points="112,80 116,75 119,78 122,74 124,80"/><circle class="th" cx="121" cy="71" r="1.5"/></g><g data-s="6" data-i="4" data-a="pop"><rect class="k f da" x="132" y="67" width="16" height="16"/><polyline class="th" points="134,80 138,75 141,78 144,74 146,80"/><circle class="th" cx="143" cy="71" r="1.5"/></g><path class="s ring" data-s="7" data-a="stamp" d="M140 70.5l4.5 4.5-4.5 4.5-4.5-4.5z"/></svg>
+            <div class="node lb-at" style="--x:10;--y:23.5" data-s="1" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c1-1">{{c1.in1}}</button><span class="tip-box tb-l tb-down" id="t-c1-1" role="tooltip">{{c1.in1.tip}}</span></div>
+            <div class="node lb-at" style="--x:10;--y:45.5" data-s="1" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c1-2">{{c1.in2}}</button><span class="tip-box tb-l tb-down" id="t-c1-2" role="tooltip">{{c1.in2.tip}}</span></div>
+            <div class="node lb-at" style="--x:10;--y:67.5" data-s="1" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c1-3">{{c1.in3}}</button><span class="tip-box tb-l tb-up" id="t-c1-3" role="tooltip">{{c1.in3.tip}}</span></div>
+            <div class="node lb-at" style="--x:10;--y:31.5" data-s="1" data-a="lift"><span class="lbl lb-sub">{{c1.in1.sub}}</span></div>
+            <div class="node lb-at" style="--x:10;--y:53.5" data-s="1" data-a="lift"><span class="lbl lb-sub">{{c1.in2.sub}}</span></div>
+            <div class="node lb-at" style="--x:10;--y:75.5" data-s="1" data-a="lift"><span class="lbl lb-sub">{{c1.in3.sub}}</span></div>
+            <div class="node lb-at" style="--x:59.375;--y:12" data-s="0" data-a="lift"><button type="button" class="lbl tip lb-core" aria-expanded="false" aria-controls="t-c1-4">{{c1.core}}</button><span class="tip-box tb-c tb-down" id="t-c1-4" role="tooltip">{{c1.core.tip}}</span></div>
+            <div class="node lb-at" style="--x:41.875;--y:22" data-s="3" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c1-5">{{c1.o1}}</button><span class="tip-box tb-l tb-down" id="t-c1-5" role="tooltip">{{c1.o1.tip}}</span></div>
+            <div class="node lb-at" style="--x:79.063;--y:22" data-s="3" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c1-6">{{c1.o2}}</button><span class="tip-box tb-r tb-down" id="t-c1-6" role="tooltip">{{c1.o2.tip}}</span></div>
+            <div class="node lb-at" style="--x:45;--y:62" data-s="3" data-a="lift"><button type="button" class="lbl tip lb-sig" aria-expanded="false" aria-controls="t-c1-7">{{c1.o3}}</button><span class="tip-box tb-l tb-up" id="t-c1-7" role="tooltip">{{c1.o3.tip}}</span></div>
+          </div>
+        </figure>
+      </article>
+
+      <article class="ex" id="projet-2" aria-labelledby="c2-h">
+        <h3 class="sr-only" id="c2-h">{{wk.proj}} 02 · {{c2.name}}</h3>
+        <p class="ex-meta"><span class="ex-n">02</span>{{c2.sector}}</p>
+        <p class="ex-one" id="c2-one">{{c2.one}}</p>
+        <p class="ex-result mono"><span class="ex-result-k">{{wk.result}}</span>{{c2.result}}</p>
+        <figure class="plate plate-paper">
+          <div class="stage stage-case" data-fig="cast" style="--ar:160/96" role="group" data-i18n-aria="figCast" aria-label="Schéma : le vivier de talents passe dans un entonnoir réglé par le brief client ; il en reste trois, vous en choisissez un, puis l’e-mail, le formulaire et la relance partent seuls.">
+            <svg class="dg" viewBox="0 0 160 96" aria-hidden="true"><circle class="k f" data-s="0" data-i="0" data-a="pop" cx="8" cy="30" r="3.2"/><circle class="i" data-s="0" data-i="1" data-a="pop" cx="17" cy="30" r="3.2"/><circle class="k f" data-s="0" data-i="2" data-a="pop" cx="26" cy="30" r="3.2"/><circle class="k f" data-s="0" data-i="3" data-a="pop" cx="8" cy="41" r="3.2"/><circle class="k f" data-s="0" data-i="4" data-a="pop" cx="17" cy="41" r="3.2"/><circle class="k f" data-s="0" data-i="5" data-a="pop" cx="26" cy="41" r="3.2"/><circle class="i" data-s="0" data-i="0" data-a="pop" cx="8" cy="52" r="3.2"/><circle class="k f" data-s="0" data-i="1" data-a="pop" cx="17" cy="52" r="3.2"/><circle class="i" data-s="0" data-i="2" data-a="pop" cx="26" cy="52" r="3.2"/><circle class="k f" data-s="0" data-i="3" data-a="pop" cx="8" cy="63" r="3.2"/><circle class="k f" data-s="0" data-i="4" data-a="pop" cx="17" cy="63" r="3.2"/><circle class="k f" data-s="0" data-i="5" data-a="pop" cx="26" cy="63" r="3.2"/><circle class="i" data-s="0" data-i="0" data-a="pop" cx="8" cy="74" r="3.2"/><circle class="i" data-s="0" data-i="1" data-a="pop" cx="17" cy="74" r="3.2"/><circle class="k f" data-s="0" data-i="2" data-a="pop" cx="26" cy="74" r="3.2"/><g data-s="1" data-a="slide"><rect class="k f" x="34" y="4" width="42" height="12"/></g><g data-s="2" data-a="wipev"><path class="k" d="M55 16V31.5M52.5 29L55 31.5 57.5 29"/></g><g data-s="2" data-a="wipe"><path class="k f2" d="M36 22L74 42V58L36 78Z"/></g><g data-s="3" data-a="wipe"><path class="k" d="M74 50L82.6 39.5M74 50H82.4M74 50L82.6 60.5"/></g><circle class="i" data-s="4" data-i="0" data-a="pop" cx="86" cy="38" r="3.6"/><circle class="i" data-s="4" data-i="1" data-a="pop" cx="86" cy="50" r="3.6"/><circle class="i" data-s="4" data-i="2" data-a="pop" cx="86" cy="62" r="3.6"/><path class="th da" data-s="5" data-a="fade" d="M86 31V43"/><circle class="s" data-s="5" data-a="pop" cx="86" cy="50" r="3.6"/><circle class="ss" data-s="5" data-a="stamp" cx="86" cy="50" r="6.5"/><g data-s="6" data-a="wipe"><path class="k" d="M92.5 50H106M106 14V76M106 14H126M106 45H126M106 76H127"/><path class="fl" d="M92.5 50H106M106 14V76M106 14H126M106 45H126M106 76H127"/></g><g data-s="7" data-i="0" data-a="pop"><rect class="k f" x="126" y="8" width="16" height="12"/><path class="k" d="M126 8l8 6.5 8-6.5"/></g><g data-s="7" data-i="1" data-a="pop"><rect class="k f" x="126" y="38" width="16" height="14"/><path class="th" d="M129 42h10M129 45.5h10M129 49h6"/></g><g data-s="7" data-i="2" data-a="pop"><circle class="k f" cx="134" cy="76" r="7"/><path class="k" d="M134 71.5V76l3 2"/></g></svg>
+            <div class="node lb-at" style="--x:11.875;--y:21.875" data-s="0" data-a="lift"><span class="lbl lb-plain">{{c2.pool}}</span></div>
+            <div class="node lb-at" style="--x:34.375;--y:10.417" data-s="1" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c2-1">{{c2.in}}</button><span class="tip-box tb-l tb-down" id="t-c2-1" role="tooltip">{{c2.in.tip}}</span></div>
+            <div class="node lb-at" style="--x:32.5;--y:52.083" data-s="2" data-a="lift"><button type="button" class="lbl tip lb-core" aria-expanded="false" aria-controls="t-c2-2">{{c2.core}}</button><span class="tip-box tb-c tb-down" id="t-c2-2" role="tooltip">{{c2.core.tip}}</span></div>
+            <div class="node lb-at" style="--x:53.75;--y:28.125" data-s="5" data-a="lift"><button type="button" class="lbl tip lb-sig" aria-expanded="false" aria-controls="t-c2-3">{{c2.gate}}</button><span class="tip-box tb-c tb-down" id="t-c2-3" role="tooltip">{{c2.gate.tip}}</span></div>
+            <div class="node lb-at" style="--x:83.75;--y:26.042" data-s="7" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c2-4">{{c2.o1}}</button><span class="tip-box tb-r tb-down" id="t-c2-4" role="tooltip">{{c2.o1.tip}}</span></div>
+            <div class="node lb-at" style="--x:83.75;--y:59.375" data-s="7" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c2-5">{{c2.o2}}</button><span class="tip-box tb-r tb-up" id="t-c2-5" role="tooltip">{{c2.o2.tip}}</span></div>
+            <div class="node lb-at" style="--x:83.75;--y:93.75" data-s="7" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c2-6">{{c2.o3}}</button><span class="tip-box tb-r tb-up" id="t-c2-6" role="tooltip">{{c2.o3.tip}}</span></div>
+          </div>
+        </figure>
+      </article>
+
+      <article class="ex" id="projet-3" aria-labelledby="c3-h">
+        <h3 class="sr-only" id="c3-h">{{wk.proj}} 03 · {{c3.name}}</h3>
+        <p class="ex-meta"><span class="ex-n">03</span>{{c3.sector}}</p>
+        <p class="ex-one" id="c3-one">{{c3.one}}</p>
+        <p class="ex-result mono"><span class="ex-result-k">{{wk.result}}</span>{{c3.result}}</p>
+        <figure class="plate plate-paper">
+          <div class="stage stage-case" data-fig="docs" style="--ar:160/104" role="group" data-i18n-aria="figDocs" aria-label="Schéma : le contrat et la situation cochent des sections dans une table de règles ; chaque section a son modèle Word ; le dossier client réunit le recueil client, le devoir de conseil et les conditions, plus une partie saisie à la main.">
+            <svg class="dg" viewBox="0 0 160 104" aria-hidden="true"><defs><pattern id="hatch-docs" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="hatch" d="M0 0V2.4" stroke-width="0.6"/></pattern></defs><g data-s="0" data-i="0" data-a="pop"><rect class="k f" x="3" y="10" width="32" height="16"/><rect class="k f2" x="7" y="17.5" width="6" height="4"/><rect class="i" x="16.5" y="17.5" width="6" height="4"/><rect class="k f2" x="26" y="17.5" width="6" height="4"/></g><g data-s="0" data-i="1" data-a="pop"><rect class="k f" x="3" y="36" width="32" height="16"/><rect class="i" x="7" y="43.5" width="6" height="4"/><rect class="k f2" x="16.5" y="43.5" width="6" height="4"/><rect class="k f2" x="26" y="43.5" width="6" height="4"/></g><g data-s="1" data-a="wipe"><path class="k" d="M35 18H46M35 44H46"/></g><g data-s="1" data-a="fade"><path class="th da" d="M51 11V77M60 11V77M69 11V77M78 11V77M87 11V77"/><rect class="k f" x="47.5" y="14.5" width="7" height="7"/><rect class="k f" x="47.5" y="40.5" width="7" height="7"/><rect class="k f" x="47.5" y="62.5" width="7" height="7"/><rect class="k f" x="56.5" y="14.5" width="7" height="7"/><rect class="k f" x="56.5" y="40.5" width="7" height="7"/><rect class="k f" x="56.5" y="62.5" width="7" height="7"/><rect class="k f" x="65.5" y="14.5" width="7" height="7"/><rect class="k f" x="65.5" y="40.5" width="7" height="7"/><rect class="k f" x="65.5" y="62.5" width="7" height="7"/><rect class="k f" x="74.5" y="14.5" width="7" height="7"/><rect class="k f" x="74.5" y="40.5" width="7" height="7"/><rect class="k f" x="74.5" y="62.5" width="7" height="7"/><rect class="k f" x="83.5" y="14.5" width="7" height="7"/><rect class="k f" x="83.5" y="40.5" width="7" height="7"/><rect class="k f" x="83.5" y="62.5" width="7" height="7"/></g><rect class="i" data-s="2" data-i="0" data-a="pop" x="47.5" y="14.5" width="7" height="7"/><rect class="i" data-s="2" data-i="1" data-a="pop" x="56.5" y="14.5" width="7" height="7"/><rect class="i" data-s="3" data-i="0" data-a="pop" x="65.5" y="40.5" width="7" height="7"/><rect class="i" data-s="3" data-i="1" data-a="pop" x="74.5" y="40.5" width="7" height="7"/><rect class="i" data-s="4" data-i="0" data-a="pop" x="47.5" y="62.5" width="7" height="7"/><rect class="i" data-s="4" data-i="1" data-a="pop" x="56.5" y="62.5" width="7" height="7"/><rect class="i" data-s="4" data-i="2" data-a="pop" x="65.5" y="62.5" width="7" height="7"/><rect class="i" data-s="4" data-i="3" data-a="pop" x="74.5" y="62.5" width="7" height="7"/><path class="th" data-s="4" data-i="4" data-a="fade" d="M84 63.5l6 5M90 63.5l-6 5"/><path class="k f" data-s="5" data-i="0" data-a="pop" d="M47.5 78h5l2 2v8h-7z"/><path class="k f" data-s="5" data-i="1" data-a="pop" d="M56.5 78h5l2 2v8h-7z"/><path class="k f" data-s="5" data-i="2" data-a="pop" d="M65.5 78h5l2 2v8h-7z"/><path class="k f" data-s="5" data-i="3" data-a="pop" d="M74.5 78h5l2 2v8h-7z"/><path class="k f mut" data-s="5" data-i="4" data-a="pop" d="M83.5 78h5l2 2v8h-7z"/><g data-s="6" data-a="wipe"><path class="k" d="M93 66H101M98.5 63.5L101 66 98.5 68.5"/></g><g data-s="6" data-a="pop"><path class="k f" d="M103 10H149L156 17V98H103Z"/><path class="k" d="M149 10V17H156"/></g><rect class="k f2" data-s="7" data-i="0" data-a="pop" x="107" y="19" width="45" height="11"/><rect class="k f2" data-s="7" data-i="1" data-a="pop" x="107" y="33" width="45" height="11"/><rect class="k f2" data-s="7" data-i="2" data-a="pop" x="107" y="47" width="45" height="11"/><rect class="ss" data-s="8" data-a="pop" x="107" y="61" width="45" height="11" fill="url(#hatch-docs)"/><path class="s ring" data-s="8" data-a="stamp" d="M152 63.3l3.2 3.2-3.2 3.2-3.2-3.2z"/></svg>
+            <div class="node lb-at" style="--x:11.875;--y:9.615" data-s="0" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c3-1">{{c3.in1}}</button><span class="tip-box tb-l tb-down" id="t-c3-1" role="tooltip">{{c3.in1.tip}}</span></div>
+            <div class="node lb-at" style="--x:11.875;--y:34.615" data-s="0" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c3-2">{{c3.in2}}</button><span class="tip-box tb-l tb-down" id="t-c3-2" role="tooltip">{{c3.in2.tip}}</span></div>
+            <div class="node lb-at" style="--x:43.125;--y:92.308" data-s="5" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c3-3">{{c3.in3}}</button><span class="tip-box tb-c tb-up" id="t-c3-3" role="tooltip">{{c3.in3.tip}}</span></div>
+            <div class="node lb-at" style="--x:43.125;--y:53.365" data-s="1" data-a="lift"><button type="button" class="lbl tip lb-core" aria-expanded="false" aria-controls="t-c3-4">{{c3.core}}</button><span class="tip-box tb-c tb-up" id="t-c3-4" role="tooltip">{{c3.core.tip}}</span></div>
+            <div class="node lb-at" style="--x:78.75;--y:9.615" data-s="6" data-a="lift"><button type="button" class="lbl tip" aria-expanded="false" aria-controls="t-c3-5">{{c3.o1}}</button><span class="tip-box tb-r tb-down" id="t-c3-5" role="tooltip">{{c3.o1.tip}}</span></div>
+            <div class="node lb-at" style="--x:80.938;--y:23.558" data-s="7" data-a="lift"><span class="lbl lb-band">{{c3.b1}}</span></div>
+            <div class="node lb-at" style="--x:80.938;--y:37.019" data-s="7" data-a="lift"><span class="lbl lb-band">{{c3.b2}}</span></div>
+            <div class="node lb-at" style="--x:80.938;--y:50.481" data-s="7" data-a="lift"><span class="lbl lb-band">{{c3.b3}}</span></div>
+            <div class="node lb-at" style="--x:80.938;--y:77.885" data-s="8" data-a="lift"><button type="button" class="lbl tip lb-sig" aria-expanded="false" aria-controls="t-c3-6">{{c3.o2}}</button><span class="tip-box tb-r tb-up" id="t-c3-6" role="tooltip">{{c3.o2.tip}}</span></div>
+          </div>
+        </figure>
+      </article>
+
+      <figure class="quote"><blockquote><p>{{q.text}}</p></blockquote><figcaption class="mono">{{q.who}}</figcaption></figure>
+    </section>
+
+    <!-- ───────────── §04 CONTACT: 3D business card ───────────── -->
+    <section class="sec ct" id="contact" aria-labelledby="ct-title">
+      <header class="sec-head"><h2 id="ct-title" class="h2">{{ct.title}}</h2><p class="ct-lead">{{ct.lead}}</p></header>
+      <div class="ct-grid">
+        <div class="bcard-scene">
+          <div class="bcard">
+            <div class="bc-face bc-front">
+              <span class="bc-top"><span class="brand-mark" aria-hidden="true"></span><span class="bc-org mono">DirectivAI</span></span>
+              <span class="bc-name">Antoine Hostier</span>
+              <span class="bc-role">{{ct.role}}</span>
+              <span class="bc-lines mono" aria-hidden="true"><a class="bc-link" tabindex="-1" href="mailto:netechoppe@proton.me"><svg class="ic ic-line" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5.5h18v13H3zM3.5 6l8.5 6.5L20.5 6"/></svg><span>netechoppe@proton.me</span></a><a class="bc-link" tabindex="-1" href="https://www.linkedin.com/in/antoine-hostier" rel="noopener" target="_blank"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span>linkedin.com/in/antoine-hostier</span></a><a class="bc-link" tabindex="-1" href="https://github.com/Rovis91" rel="noopener" target="_blank"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg><span>github.com/Rovis91</span></a><a class="bc-link" tabindex="-1" href="https://www.malt.fr/profile/antoinehostier" rel="noopener" target="_blank"><svg class="ic ic-malt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><text x="12" y="17.2" text-anchor="middle">m</text></svg><span>malt.fr/profile/antoinehostier</span></a></span>
+            </div>
+            <div class="bc-face bc-back">
+              <i class="bc-dm" aria-hidden="true"></i>
+              <span class="bc-motto">{{ct.back}}</span>
+              <span class="bc-org mono">Antoine Hostier · DirectivAI</span>
+            </div>
+          </div>
+          <span class="bcard-shadow" aria-hidden="true"></span>
+        </div>
+        <div class="bc-side">
+          <div class="bc-actions">
+            <a class="btn btn-ink bc-main" href="https://calendly.com/antoine-rtc3/30min" target="_blank" rel="noopener"><span>{{ct.book}}</span><i class="arr" aria-hidden="true"></i></a>
+            <button class="btn btn-line" type="button" data-vcard><span class="bv-idle">{{ct.vcard}}</span><span class="bv-done" aria-hidden="true"><i class="bv-check"></i>{{ct.vcard.done}}</span></button>
+            <button class="btn btn-line" type="button" data-share><span>{{ct.share}}</span><i class="share-ic" aria-hidden="true"></i></button>
+          </div>
+          <p class="reassure mono">{{cta.reassure}}</p>
+          <p class="bc-status mono" role="status" aria-live="polite"></p>
+          <section class="parcours" aria-labelledby="pc-title">
+            <h3 class="pc-title mono" id="pc-title">{{pc.title}}</h3>
+            <ol class="pc-list">
+              <li><span class="pc-d mono">{{pc.d1}}</span><p>{{pc.t1}}</p></li>
+              <li><span class="pc-d mono">2024 – 2026</span><p>{{pc.t2}}</p></li>
+              <li><span class="pc-d mono">2023</span><p>{{pc.t3}}</p></li>
+              <li><span class="pc-d mono">2019 – 2024</span><p>{{pc.t4}}</p></li>
+            </ol>
+            <a class="pc-cv l-fr" lang="fr" href="/cv/cv-antoine-hostier-fr.pdf" download="Antoine-Hostier-CV.pdf"><i class="pc-cv-ic" aria-hidden="true"></i><span>Télécharger le CV (PDF, 300 Ko)</span></a>
+            <a class="pc-cv l-en" lang="en" href="/cv/cv-antoine-hostier-en.pdf" download="Antoine-Hostier-Resume.pdf"><i class="pc-cv-ic" aria-hidden="true"></i><span>Download the resume (PDF, 300 KB)</span></a>
+          </section>
+          <p class="socials">
+            <a href="https://www.linkedin.com/in/antoine-hostier" rel="noopener" target="_blank"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>LinkedIn<i class="ext" aria-hidden="true">↗</i></a>
+            <a href="https://github.com/Rovis91" rel="noopener" target="_blank"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>GitHub<i class="ext" aria-hidden="true">↗</i></a>
+            <a href="https://www.malt.fr/profile/antoinehostier" rel="noopener" target="_blank"><svg class="ic ic-malt" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><text x="12" y="17.2" text-anchor="middle">m</text></svg>Malt<i class="ext" aria-hidden="true">↗</i></a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <p class="foot-row"><span>Antoine Hostier</span><span>DirectivAI</span><span>{{ft.siret}}</span><span>© 2026</span></p>
+    <details class="legal">
+      <summary>{{ft.legal}}</summary>
+      <dl>
+        <dt>{{ft.k.pub}}</dt><dd>{{ft.v.pub}}</dd>
+        <dt>{{ft.k.siret}}</dt><dd>{{ft.v.siret}}</dd>
+        <dt>{{ft.k.addr}}</dt><dd>{{ft.v.addr}}</dd>
+        <dt>{{ft.k.contact}}</dt><dd><a href="mailto:netechoppe@proton.me">netechoppe@proton.me</a></dd>
+        <dt>{{ft.k.dir}}</dt><dd>{{ft.v.dir}}</dd>
+        <dt>{{ft.k.host}}</dt><dd>{{ft.v.host}}</dd>
+        <dt>{{ft.k.ip}}</dt><dd>{{ft.v.ip}}</dd>
+        <dt>{{ft.k.ctrl}}</dt><dd>{{ft.v.ctrl}}</dd>
+        <dt>{{ft.k.mail}}</dt><dd>{{ft.v.mail}}</dd>
+        <dt>{{ft.k.rights}}</dt><dd>{{ft.v.rights}}</dd>
+        <dt>{{ft.k.logs}}</dt><dd>{{ft.v.logs}}</dd>
+        <dt>{{ft.k.data}}</dt><dd>{{ft.v.data}}</dd>
+      </dl>
+    </details>
+  </footer>
+</body>
+</html>

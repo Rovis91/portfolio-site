@@ -1,0 +1,15 @@
+{
+  "name": "Antoine Hostier — IA et automatisation pour PME",
+  "short_name": "Antoine Hostier",
+  "description": "Outils IA et automatisations sur mesure pour PME.",
+  "lang": "fr",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#efebe2",
+  "theme_color": "#efebe2",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

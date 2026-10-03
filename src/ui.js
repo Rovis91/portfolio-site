@@ -1,0 +1,32 @@
+// Runtime strings (attributes, share/vCard states). Page copy lives in content.js.
+
+export const ui = {
+  fr: {
+    title: 'Antoine Hostier — IA et automatisation pour PME',
+    description: 'Vos tâches répétitives tournent seules, vous gardez les décisions. Des outils IA et des automatisations sur mesure, construits avec vos équipes.',
+    langSwitch: 'Changer de langue',
+    nav: 'Navigation principale',
+    figHero: 'Exemple : votre lundi. Sept tâches répétitives, 6 h 30 au total, passent en automatique ; il vous reste 20 minutes pour choisir quels devis envoyer.',
+    figEcom: 'Schéma interactif : Shopify, Meta Ads et Drive branchés sur une seule App interne, qui affiche le chiffre d’affaires par boutique, le ROAS des campagnes et les visuels produits, le dernier en attente de validation par une personne.',
+    figCast: 'Schéma interactif : le vivier de talents passe dans un entonnoir réglé par le brief client ; il en reste trois, vous en choisissez un, puis l’e-mail, le formulaire et la relance partent seuls.',
+    figDocs: 'Schéma interactif : le contrat et la situation cochent des sections dans une table de règles ; chaque section a son modèle Word ; le dossier client réunit le recueil client, le devoir de conseil et les conditions, plus une partie saisie à la main.',
+    shareText: 'Antoine Hostier — IA et automatisation pour PME',
+    linkCopied: 'Lien copié.',
+    vcardDone: 'Fiche contact téléchargée.',
+    vcardTitle: 'IA et automatisation pour PME — outils sur mesure, applications internes',
+  },
+  en: {
+    title: 'Antoine Hostier — AI and automation for SMEs',
+    description: 'Your repetitive tasks run on their own, you keep the decisions. Custom AI tools and automations, built with your team.',
+    langSwitch: 'Change language',
+    nav: 'Main navigation',
+    figHero: 'Example: your Monday. Seven repetitive tasks, 6 h 30 in total, run on their own; you keep 20 minutes to choose which quotes to send.',
+    figEcom: 'Interactive diagram: Shopify, Meta Ads and Drive plugged into a single internal app, which shows sales by store, campaign ROAS and product visuals, the last one waiting for a person to approve it.',
+    figCast: 'Interactive diagram: the talent pool goes through a funnel set by the client brief; three are left, you pick one, then the e-mail, the form and the reminder go out on their own.',
+    figDocs: 'Interactive diagram: the contract and the situation tick sections in a rule table; each section has its Word template; the client file gathers the client profile, the advice report and the terms, plus a part entered by hand.',
+    shareText: 'Antoine Hostier — AI and automation for SMEs',
+    linkCopied: 'Link copied.',
+    vcardDone: 'Contact card downloaded.',
+    vcardTitle: 'AI and automation for SMEs — custom tools, internal apps',
+  },
+}

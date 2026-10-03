@@ -1,0 +1,11 @@
+node_modules
+dist
+.vercel
+_archive
+cv-source
+.claude
+.mcp.json
+PLAN-*.md
+REVIEW-*.md
+PROMPT-*.md
+PROTOTYPE.md
