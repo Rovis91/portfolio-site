@@ -15,14 +15,11 @@ export const content = {
   'skip': { fr: 'Aller au contenu', en: 'Skip to content' },
 
   // ── hero
-  'hero.title': { fr: 'Vos tâches répétitives tournent seules. <em class="hl-human">Vous gardez</em> les décisions.', en: 'Your repetitive tasks run on their own. <em class="hl-human">You keep</em> the decisions.' },
-  'hero.sub': { fr: 'Des outils IA et des automatisations sur mesure, construits avec vos équipes, dans les logiciels que vous utilisez déjà.', en: 'Custom AI tools and automations, built with your team, inside the software you already use.' },
+  'hero.title': { fr: 'Vous voulez de l’IA, mais vous ne savez pas <em class="hl-human">par où commencer.</em>', en: 'You want AI, but you don’t know <em class="hl-human">where to start.</em>' },
   'hero.cta': { fr: 'Réserver un appel de 30&nbsp;min', en: 'Book a 30-min call' },
   'hero.cta2': { fr: 'Voir des exemples', en: 'See examples' },
 
   // hero figure: "your Monday", the repetitive lines get done, one decision stays yours
-  'cta.reassure': { fr: 'Gratuit · sans engagement · réponse sous 24&nbsp;h', en: 'Free · no commitment · reply within 24 h' },
-  'h.note': { fr: 'Exemple type · vos chiffres seront les vôtres', en: 'Typical example · your numbers will be your own' },
 
   'h.day': { fr: 'Votre lundi', en: 'Your Monday' },
   'h.t0': { fr: 'Recopier les commandes dans le tableur', en: 'Copy orders into the spreadsheet' },
@@ -36,45 +33,37 @@ export const content = {
 
   // ── §01 problems (the client's words) → what changes for them
   'pb.title': { fr: 'Ça vous parle&nbsp;?', en: 'Sound familiar?' },
-  'pb.ak': { fr: 'Ce qui change', en: 'What changes' },
   'pb.1': { fr: 'Vous avez essayé l’IA, mais rien n’est resté.', en: 'You tried AI, but nothing stuck.' },
-  'pb.1a': { fr: 'L’IA entre dans les outils que vous utilisez tous les jours, là où elle est utile.', en: 'AI goes into the tools you use every day, where it’s useful.' },
+  'pb.1a': { fr: 'L’IA s’intègre à vos outils du quotidien.', en: 'AI built into the tools you already use.' },
   'pb.2': { fr: 'Vos équipes refont les mêmes tâches, chaque jour.', en: 'Your team repeats the same tasks, every day.' },
-  'pb.2a': { fr: 'Ces tâches tournent toutes seules, et vos équipes passent leur temps sur le reste.', en: 'Those tasks run on their own, and your team spends its time on the rest.' },
-  'pb.3': { fr: 'Impossible de faire plus de volume sans craquer.', en: 'You can’t take on more volume without breaking.' },
-  'pb.3a': { fr: 'Vos process tiennent la charge, avec la même équipe.', en: 'Your processes handle the load, with the same team.' },
+  'pb.2a': { fr: 'On peut les automatiser.', en: 'They can be automated.' },
+  'pb.3': { fr: 'Votre activité grandit, pas votre équipe.', en: 'Your business is growing, your team isn’t.' },
+  'pb.3a': { fr: 'Vos process absorbent la charge, avec la même équipe.', en: 'Your processes absorb the load, with the same team.' },
   'pb.4': { fr: 'Vous vous perdez dans des outils qui ne vous ressemblent pas.', en: 'You’re lost in tools that don’t fit how you work.' },
-  'pb.4a': { fr: 'Vous travaillez dans un seul outil, construit autour de vos habitudes.', en: 'You work in a single tool, built around how you already work.' },
+  'pb.4a': { fr: 'Un seul outil, construit autour de vos habitudes.', en: 'One tool, built around how you work.' },
 
   // ── §02 method: not a template
   'mt.title': { fr: 'Pas de modèle tout fait. Un outil à votre mesure.', en: 'No off-the-shelf template. A tool cut to fit you.' },
-  'mt.tpl': { fr: 'Un modèle', en: 'A template' },
+  'mt.tpl': { fr: 'Outil standard', en: 'Standard tool' },
   'mt.tpl.v': { fr: 'Vous vous adaptez à l’outil.', en: 'You bend to the tool.' },
   'mt.fit': { fr: 'Sur mesure', en: 'Made to measure' },
   'mt.fit.v': { fr: 'L’outil s’adapte à vous.', en: 'The tool fits you.' },
   'mt.s1.t': { fr: 'Votre réalité d’abord', en: 'Your reality first' },
-  'mt.s1': { fr: 'Le point de départ, ce sont vos outils, vos équipes et vos contraintes, pas un catalogue.', en: 'The starting point is your tools, your team and your constraints, not a catalogue.' },
+  'mt.s1': { fr: 'Vos outils et vos contraintes, pas un catalogue.', en: 'Your tools and constraints, not a catalogue.' },
   'mt.s2.t': { fr: 'Conçu autour de vous', en: 'Designed around you' },
-  'mt.s2': { fr: 'Chaque écran et chaque automatisation répondent à un vrai besoin.', en: 'Every screen and every automation answers a real need.' },
-  'mt.s1.x': { fr: 'Appel + revue de vos outils · ≈ 1 semaine', en: 'Call + review of your tools · ~1 week' },
-  'mt.s2.x': { fr: 'Première version utilisable · 2 à 4 semaines', en: 'First usable version · 2 to 4 weeks' },
-  'mt.s3.x': { fr: 'Ajustements inclus', en: 'Adjustments included' },
-  'mt.price': { fr: 'Devis fixe après le premier appel, avant tout engagement.', en: 'Fixed quote after the first call, before any commitment.' },
+  'mt.s2': { fr: 'Chaque écran répond à un vrai besoin.', en: 'Every screen answers a real need.' },
   'mt.s3.t': { fr: 'Ajusté avec vous', en: 'Adjusted with you' },
-  'mt.s3': { fr: 'Vous testez, vous donnez votre avis, et l’outil est corrigé jusqu’à ce qu’il colle.', en: 'You test it, you give feedback, and the tool gets adjusted until it fits.' },
+  'mt.s3': { fr: 'Vous testez, l’outil est corrigé jusqu’à ce qu’il colle.', en: 'You test it, we adjust until it fits.' },
 
   // ── §03 examples: one 3D demo + one sentence each
   'wk.title': { fr: 'Trois projets, trois métiers.', en: 'Three projects, three industries.' },
-  'wk.result': { fr: 'Résultat', en: 'Result' },
-  'wk.hint': { fr: 'Touchez ou survolez une étiquette du schéma pour voir le détail.', en: 'Tap or hover a label on the diagram to see the detail.' },
   'wk.proj': { fr: 'Projet', en: 'Project' },
 
   'c1.name': { fr: 'E-commerce international', en: 'International e-commerce' },
   'c2.name': { fr: 'Agence de talents', en: 'Talent agency' },
   'c3.name': { fr: 'Assurance &amp; placements', en: 'Insurance &amp; investments' },
-  'c1.sector': { fr: 'E-commerce international · ≈ 4 mois', en: 'International e-commerce · ~4 months' },
   'c1.result': { fr: 'Environ 12&nbsp;h de reporting par semaine en moins', en: 'About 12 hours of weekly reporting saved' },
-  'c1.one': { fr: 'Une application interne réunit les boutiques, les publicités et les fichiers. Toute l’équipe s’en sert.', en: 'An internal app brings the stores, the ads and the files together. The whole team uses it.' },
+  'c1.one': { fr: 'Une application interne réunit boutiques, publicités et fichiers.', en: 'An internal app brings stores, ads and files together.' },
   'c1.in1': { fr: 'Shopify', en: 'Shopify' },
   'c1.in1.sub': { fr: 'commandes', en: 'orders' },
   'c1.in1.tip': { fr: 'Les ventes de plusieurs boutiques, regroupées.', en: 'Sales from several stores, pulled together.' },
@@ -93,9 +82,8 @@ export const content = {
   'c1.o3': { fr: `Visuels produits ${D}`, en: `Product visuals ${D}` },
   'c1.o3.tip': { fr: 'Les images sont générées, puis une personne les valide avant usage.', en: 'Images are generated, then a person approves them before use.' },
 
-  'c2.sector': { fr: 'Agence de talents · ≈ 3 mois', en: 'Talent agency · ~3 months' },
   'c2.result': { fr: 'Une sélection de talents en 20&nbsp;min au lieu de 2&nbsp;h', en: 'A talent shortlist in 20&nbsp;min instead of 2&nbsp;h' },
-  'c2.one': { fr: 'Une app Airtable filtre les talents, puis envoie les e-mails et les rappels. Le choix final reste à la responsable.', en: 'An Airtable app filters the talent, then sends the emails and reminders. The final call stays with the manager.' },
+  'c2.one': { fr: 'Une app Airtable filtre les talents et envoie les e-mails. Le choix final reste à la responsable.', en: 'An Airtable app filters talent and sends the emails. The final call stays with the manager.' },
   'c2.pool': { fr: 'Vivier', en: 'Talent pool' },
   'c2.in': { fr: 'Brief client', en: 'Client brief' },
   'c2.in.tip': { fr: 'Les demandes des clients arrivent dans une seule base.', en: 'Client requests land in a single base.' },
@@ -110,9 +98,8 @@ export const content = {
   'c2.o3': { fr: 'Relance', en: 'Reminder' },
   'c2.o3.tip': { fr: 'Les rappels partent seuls, eux aussi.', en: 'Reminders go out on their own too.' },
 
-  'c3.sector': { fr: 'Assurance &amp; placements · ≈ 5 mois', en: 'Insurance &amp; investments · ~5 months' },
   'c3.result': { fr: 'Un dossier client en 10&nbsp;min au lieu de 1&nbsp;h&nbsp;30', en: 'A client file in 10&nbsp;min instead of 1&nbsp;h&nbsp;30' },
-  'c3.one': { fr: 'Les dossiers clients s’assemblent seuls selon le contrat et la situation, puis sortent en PDF.', en: 'Client files assemble themselves from the contract and the client’s situation, then come out as a PDF.' },
+  'c3.one': { fr: 'Les dossiers clients s’assemblent seuls, puis sortent en PDF.', en: 'Client files assemble themselves, then come out as a PDF.' },
   'c3.in1': { fr: 'Contrat', en: 'Contract' },
   'c3.in1.tip': { fr: 'Le type de contrat détermine une partie des sections.', en: 'The contract type decides some of the sections.' },
   'c3.in2': { fr: 'Situation', en: 'Situation' },
@@ -136,9 +123,8 @@ export const content = {
 
   // ── §04 contact: 3D business card
   'ct.title': { fr: 'Parlons de votre projet.', en: 'Let’s talk about your project.' },
-  'ct.lead': { fr: 'Décrivez une tâche qui vous coûte du temps. En 30 minutes, vous saurez si elle peut s’automatiser.', en: 'Describe a task that costs you time. In 30 minutes, you’ll know whether it can be automated.' },
   'ct.book': { fr: 'Réserver un appel de 30&nbsp;min', en: 'Book a 30-min call' },
-  'ct.role': { fr: 'IA &amp; automatisation pour PME<br>Outils sur mesure · applications internes', en: 'AI &amp; automation for SMEs<br>Custom tools · internal apps' },
+  'ct.role': { fr: 'IA &amp; automatisation pour PME', en: 'AI &amp; automation for SMEs' },
   'ct.back': { fr: 'Un outil à votre mesure.', en: 'A tool cut to fit you.' },
   'ct.share': { fr: 'Partager', en: 'Share' },
   'ct.vcard': { fr: 'Ajouter aux contacts', en: 'Add to contacts' },

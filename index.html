@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <title>Antoine Hostier — IA et automatisation pour PME</title>
-  <meta name="description" content="Vos tâches répétitives tournent seules, vous gardez les décisions. Des outils IA et des automatisations sur mesure, construits avec vos équipes." />
+  <meta name="description" content="Vous voulez de l’IA mais ne savez pas par où commencer ? Outils IA et automatisations sur mesure pour PME." />
   <meta name="theme-color" content="#efebe2" />
   <meta name="author" content="Antoine Hostier" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
@@ -13,7 +13,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Antoine Hostier" />
   <meta property="og:title" content="Antoine Hostier — IA et automatisation pour PME" />
-  <meta property="og:description" content="Vos tâches répétitives tournent seules, vous gardez les décisions. Des outils IA et des automatisations sur mesure, construits avec vos équipes." />
+  <meta property="og:description" content="Vous voulez de l’IA mais ne savez pas par où commencer ? Outils IA et automatisations sur mesure pour PME." />
   <meta property="og:locale" content="fr_FR" />
   <meta property="og:locale:alternate" content="en_US" />
   <meta property="og:url" content="%VITE_SITE_URL%/" />
@@ -23,7 +23,7 @@
   <meta property="og:image:alt" content="Antoine Hostier — IA et automatisation pour PME" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Antoine Hostier — IA et automatisation pour PME" />
-  <meta name="twitter:description" content="Vos tâches répétitives tournent seules, vous gardez les décisions. Des outils IA et des automatisations sur mesure, construits avec vos équipes." />
+  <meta name="twitter:description" content="Vous voulez de l’IA mais ne savez pas par où commencer ? Outils IA et automatisations sur mesure pour PME." />
   <meta name="twitter:image" content="%VITE_SITE_URL%/og.png" />
   <meta name="twitter:image:alt" content="Antoine Hostier — IA et automatisation pour PME" />
   <script type="application/ld+json">
@@ -111,7 +111,6 @@
           <span class="hero-by-t"><b>Antoine Hostier</b><span>{{brand.role}}</span></span>
         </p>
         <h1 id="hero-title" class="h1">{{hero.title}}</h1>
-        <p class="hero-sub">{{hero.sub}}</p>
       </div>
 
       <figure class="fig1">
@@ -132,14 +131,12 @@
             </ol>
           </div>
         </div>
-        <figcaption class="hl-note mono">{{h.note}}</figcaption>
       </figure>
 
       <div class="ctas">
         <a class="btn btn-ink" href="https://calendly.com/antoine-rtc3/30min" target="_blank" rel="noopener"><span>{{hero.cta}}</span><i class="arr" aria-hidden="true"></i></a>
         <a class="btn btn-line" href="#exemples"><span>{{hero.cta2}}</span></a>
       </div>
-      <p class="reassure mono">{{cta.reassure}}</p>
     </section>
 
     <!-- ───────────── §01 PROBLEMS ───────────── -->
@@ -155,7 +152,7 @@
             </svg>
             <p class="pb-q">{{pb.1}}</p>
           </div>
-          <p class="pb-a"><span class="pb-k">{{pb.ak}}</span>{{pb.1a}}</p>
+          <p class="pb-a">{{pb.1a}}</p>
         </li>
         <li class="pb-item">
           <div class="pb-row">
@@ -165,7 +162,7 @@
             </svg>
             <p class="pb-q">{{pb.2}}</p>
           </div>
-          <p class="pb-a"><span class="pb-k">{{pb.ak}}</span>{{pb.2a}}</p>
+          <p class="pb-a">{{pb.2a}}</p>
         </li>
         <li class="pb-item">
           <div class="pb-row">
@@ -174,7 +171,7 @@
             </svg>
             <p class="pb-q">{{pb.3}}</p>
           </div>
-          <p class="pb-a"><span class="pb-k">{{pb.ak}}</span>{{pb.3a}}</p>
+          <p class="pb-a">{{pb.3a}}</p>
         </li>
         <li class="pb-item">
           <div class="pb-row">
@@ -185,7 +182,7 @@
             </svg>
             <p class="pb-q">{{pb.4}}</p>
           </div>
-          <p class="pb-a"><span class="pb-k">{{pb.ak}}</span>{{pb.4a}}</p>
+          <p class="pb-a">{{pb.4a}}</p>
         </li>
       </ol>
     </section>
@@ -205,22 +202,21 @@
       </div>
       <ol class="steps">
         <li class="st-rail" aria-hidden="true"><i class="st-rail-fill"></i><i class="st-rail-dot"></i></li>
-        <li><span class="st-n">01</span><h3 class="st-t">{{mt.s1.t}}</h3><p>{{mt.s1}}</p><p class="st-x mono">{{mt.s1.x}}</p></li>
-        <li><span class="st-n">02</span><h3 class="st-t">{{mt.s2.t}}</h3><p>{{mt.s2}}</p><p class="st-x mono">{{mt.s2.x}}</p></li>
-        <li><span class="st-n">03</span><h3 class="st-t">{{mt.s3.t}}</h3><p>{{mt.s3}}</p><p class="st-x mono">{{mt.s3.x}}</p></li>
+        <li><span class="st-n">01</span><h3 class="st-t">{{mt.s1.t}}</h3><p>{{mt.s1}}</p></li>
+        <li><span class="st-n">02</span><h3 class="st-t">{{mt.s2.t}}</h3><p>{{mt.s2}}</p></li>
+        <li><span class="st-n">03</span><h3 class="st-t">{{mt.s3.t}}</h3><p>{{mt.s3}}</p></li>
       </ol>
-      <p class="mt-price">{{mt.price}}</p>
     </section>
 
     <!-- ───────────── §03 EXAMPLES: one 3D demo + one sentence ───────────── -->
     <section class="sec wk dark" id="exemples" aria-labelledby="wk-title">
-      <header class="sec-head"><h2 id="wk-title" class="h2">{{wk.title}}</h2><p class="wk-hint mono">{{wk.hint}}</p></header>
+      <header class="sec-head"><h2 id="wk-title" class="h2">{{wk.title}}</h2></header>
 
       <article class="ex" id="projet-1" aria-labelledby="c1-h">
         <h3 class="sr-only" id="c1-h">{{wk.proj}} 01 · {{c1.name}}</h3>
-        <p class="ex-meta"><span class="ex-n">01</span>{{c1.sector}}</p>
+        <p class="ex-meta"><span class="ex-n">01</span></p>
         <p class="ex-one" id="c1-one">{{c1.one}}</p>
-        <p class="ex-result mono"><span class="ex-result-k">{{wk.result}}</span>{{c1.result}}</p>
+        <p class="ex-result mono">{{c1.result}}</p>
         <figure class="plate plate-paper">
           <div class="stage stage-case" data-fig="ecom" style="--ar:160/100" role="group" data-i18n-aria="figEcom" aria-label="Schéma : Shopify, Meta Ads et Drive branchés sur une seule App interne, qui affiche le chiffre d’affaires par boutique, le ROAS des campagnes et les visuels produits, le dernier en attente de validation par une personne.">
             <svg class="dg" viewBox="0 0 160 100" aria-hidden="true"><g data-s="0" data-a="wipe"><rect class="k f" x="33" y="8" width="124" height="86"/><path class="k" d="M33 16H157"/><rect class="i" x="36" y="10.75" width="2.5" height="2.5"/><rect class="i" x="40" y="10.75" width="2.5" height="2.5"/><rect class="i" x="44" y="10.75" width="2.5" height="2.5"/></g><g data-s="1" data-i="0" data-a="slide"><rect class="k f" x="3" y="23.5" width="26" height="13"/></g><g data-s="1" data-i="1" data-a="slide"><rect class="k f" x="3" y="45.5" width="26" height="13"/></g><g data-s="1" data-i="2" data-a="slide"><rect class="k f" x="3" y="67.5" width="26" height="13"/></g><g data-s="2" data-a="wipe"><path class="k" d="M29 30H33M29 52H33M29 74H33"/><rect class="k f" x="31.5" y="28.5" width="3" height="3"/><rect class="k f" x="31.5" y="50.5" width="3" height="3"/><rect class="k f" x="31.5" y="72.5" width="3" height="3"/></g><g data-s="3" data-a="pop"><rect class="k f2" x="38" y="22" width="58" height="34"/><path class="th" d="M41 51H93"/></g><g data-s="3" data-i="1" data-a="pop"><rect class="k f2" x="100" y="22" width="53" height="34"/></g><g data-s="3" data-i="2" data-a="pop"><rect class="k f2" x="38" y="62" width="115" height="26"/></g><rect class="i" data-s="4" data-i="0" data-a="grow" x="45" y="44" width="5" height="7"/><rect class="i" data-s="4" data-i="1" data-a="grow" x="53" y="40" width="5" height="11"/><rect class="i" data-s="4" data-i="2" data-a="grow" x="61" y="42" width="5" height="9"/><rect class="i" data-s="4" data-i="3" data-a="grow" x="69" y="36" width="5" height="15"/><rect class="i" data-s="4" data-i="4" data-a="grow" x="77" y="32" width="5" height="19"/><rect class="i" data-s="4" data-i="5" data-a="grow" x="85" y="27" width="5" height="24"/><g data-s="5" data-a="wipe"><polyline class="k" points="104,49 113,45 122,47 131,37 140,39 149,29"/><polyline class="k da" points="104,51 113,50 122,48 131,49 140,46 149,45"/></g><g data-s="6" data-i="0" data-a="pop"><rect class="k f" x="44" y="67" width="16" height="16"/><polyline class="th" points="46,80 50,75 53,78 56,74 58,80"/><circle class="th" cx="55" cy="71" r="1.5"/></g><g data-s="6" data-i="1" data-a="pop"><rect class="k f" x="66" y="67" width="16" height="16"/><polyline class="th" points="68,80 72,75 75,78 78,74 80,80"/><circle class="th" cx="77" cy="71" r="1.5"/></g><g data-s="6" data-i="2" data-a="pop"><rect class="k f" x="88" y="67" width="16" height="16"/><polyline class="th" points="90,80 94,75 97,78 100,74 102,80"/><circle class="th" cx="99" cy="71" r="1.5"/></g><g data-s="6" data-i="3" data-a="pop"><rect class="k f" x="110" y="67" width="16" height="16"/><polyline class="th" points="112,80 116,75 119,78 122,74 124,80"/><circle class="th" cx="121" cy="71" r="1.5"/></g><g data-s="6" data-i="4" data-a="pop"><rect class="k f da" x="132" y="67" width="16" height="16"/><polyline class="th" points="134,80 138,75 141,78 144,74 146,80"/><circle class="th" cx="143" cy="71" r="1.5"/></g><path class="s ring" data-s="7" data-a="stamp" d="M140 70.5l4.5 4.5-4.5 4.5-4.5-4.5z"/></svg>
@@ -240,9 +236,9 @@
 
       <article class="ex" id="projet-2" aria-labelledby="c2-h">
         <h3 class="sr-only" id="c2-h">{{wk.proj}} 02 · {{c2.name}}</h3>
-        <p class="ex-meta"><span class="ex-n">02</span>{{c2.sector}}</p>
+        <p class="ex-meta"><span class="ex-n">02</span></p>
         <p class="ex-one" id="c2-one">{{c2.one}}</p>
-        <p class="ex-result mono"><span class="ex-result-k">{{wk.result}}</span>{{c2.result}}</p>
+        <p class="ex-result mono">{{c2.result}}</p>
         <figure class="plate plate-paper">
           <div class="stage stage-case" data-fig="cast" style="--ar:160/96" role="group" data-i18n-aria="figCast" aria-label="Schéma : le vivier de talents passe dans un entonnoir réglé par le brief client ; il en reste trois, vous en choisissez un, puis l’e-mail, le formulaire et la relance partent seuls.">
             <svg class="dg" viewBox="0 0 160 96" aria-hidden="true"><circle class="k f" data-s="0" data-i="0" data-a="pop" cx="8" cy="30" r="3.2"/><circle class="i" data-s="0" data-i="1" data-a="pop" cx="17" cy="30" r="3.2"/><circle class="k f" data-s="0" data-i="2" data-a="pop" cx="26" cy="30" r="3.2"/><circle class="k f" data-s="0" data-i="3" data-a="pop" cx="8" cy="41" r="3.2"/><circle class="k f" data-s="0" data-i="4" data-a="pop" cx="17" cy="41" r="3.2"/><circle class="k f" data-s="0" data-i="5" data-a="pop" cx="26" cy="41" r="3.2"/><circle class="i" data-s="0" data-i="0" data-a="pop" cx="8" cy="52" r="3.2"/><circle class="k f" data-s="0" data-i="1" data-a="pop" cx="17" cy="52" r="3.2"/><circle class="i" data-s="0" data-i="2" data-a="pop" cx="26" cy="52" r="3.2"/><circle class="k f" data-s="0" data-i="3" data-a="pop" cx="8" cy="63" r="3.2"/><circle class="k f" data-s="0" data-i="4" data-a="pop" cx="17" cy="63" r="3.2"/><circle class="k f" data-s="0" data-i="5" data-a="pop" cx="26" cy="63" r="3.2"/><circle class="i" data-s="0" data-i="0" data-a="pop" cx="8" cy="74" r="3.2"/><circle class="i" data-s="0" data-i="1" data-a="pop" cx="17" cy="74" r="3.2"/><circle class="k f" data-s="0" data-i="2" data-a="pop" cx="26" cy="74" r="3.2"/><g data-s="1" data-a="slide"><rect class="k f" x="34" y="4" width="42" height="12"/></g><g data-s="2" data-a="wipev"><path class="k" d="M55 16V31.5M52.5 29L55 31.5 57.5 29"/></g><g data-s="2" data-a="wipe"><path class="k f2" d="M36 22L74 42V58L36 78Z"/></g><g data-s="3" data-a="wipe"><path class="k" d="M74 50L82.6 39.5M74 50H82.4M74 50L82.6 60.5"/></g><circle class="i" data-s="4" data-i="0" data-a="pop" cx="86" cy="38" r="3.6"/><circle class="i" data-s="4" data-i="1" data-a="pop" cx="86" cy="50" r="3.6"/><circle class="i" data-s="4" data-i="2" data-a="pop" cx="86" cy="62" r="3.6"/><path class="th da" data-s="5" data-a="fade" d="M86 31V43"/><circle class="s" data-s="5" data-a="pop" cx="86" cy="50" r="3.6"/><circle class="ss" data-s="5" data-a="stamp" cx="86" cy="50" r="6.5"/><g data-s="6" data-a="wipe"><path class="k" d="M92.5 50H106M106 14V76M106 14H126M106 45H126M106 76H127"/><path class="fl" d="M92.5 50H106M106 14V76M106 14H126M106 45H126M106 76H127"/></g><g data-s="7" data-i="0" data-a="pop"><rect class="k f" x="126" y="8" width="16" height="12"/><path class="k" d="M126 8l8 6.5 8-6.5"/></g><g data-s="7" data-i="1" data-a="pop"><rect class="k f" x="126" y="38" width="16" height="14"/><path class="th" d="M129 42h10M129 45.5h10M129 49h6"/></g><g data-s="7" data-i="2" data-a="pop"><circle class="k f" cx="134" cy="76" r="7"/><path class="k" d="M134 71.5V76l3 2"/></g></svg>
@@ -259,9 +255,9 @@
 
       <article class="ex" id="projet-3" aria-labelledby="c3-h">
         <h3 class="sr-only" id="c3-h">{{wk.proj}} 03 · {{c3.name}}</h3>
-        <p class="ex-meta"><span class="ex-n">03</span>{{c3.sector}}</p>
+        <p class="ex-meta"><span class="ex-n">03</span></p>
         <p class="ex-one" id="c3-one">{{c3.one}}</p>
-        <p class="ex-result mono"><span class="ex-result-k">{{wk.result}}</span>{{c3.result}}</p>
+        <p class="ex-result mono">{{c3.result}}</p>
         <figure class="plate plate-paper">
           <div class="stage stage-case" data-fig="docs" style="--ar:160/104" role="group" data-i18n-aria="figDocs" aria-label="Schéma : le contrat et la situation cochent des sections dans une table de règles ; chaque section a son modèle Word ; le dossier client réunit le recueil client, le devoir de conseil et les conditions, plus une partie saisie à la main.">
             <svg class="dg" viewBox="0 0 160 104" aria-hidden="true"><defs><pattern id="hatch-docs" width="2.4" height="2.4" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><path class="hatch" d="M0 0V2.4" stroke-width="0.6"/></pattern></defs><g data-s="0" data-i="0" data-a="pop"><rect class="k f" x="3" y="10" width="32" height="16"/><rect class="k f2" x="7" y="17.5" width="6" height="4"/><rect class="i" x="16.5" y="17.5" width="6" height="4"/><rect class="k f2" x="26" y="17.5" width="6" height="4"/></g><g data-s="0" data-i="1" data-a="pop"><rect class="k f" x="3" y="36" width="32" height="16"/><rect class="i" x="7" y="43.5" width="6" height="4"/><rect class="k f2" x="16.5" y="43.5" width="6" height="4"/><rect class="k f2" x="26" y="43.5" width="6" height="4"/></g><g data-s="1" data-a="wipe"><path class="k" d="M35 18H46M35 44H46"/></g><g data-s="1" data-a="fade"><path class="th da" d="M51 11V77M60 11V77M69 11V77M78 11V77M87 11V77"/><rect class="k f" x="47.5" y="14.5" width="7" height="7"/><rect class="k f" x="47.5" y="40.5" width="7" height="7"/><rect class="k f" x="47.5" y="62.5" width="7" height="7"/><rect class="k f" x="56.5" y="14.5" width="7" height="7"/><rect class="k f" x="56.5" y="40.5" width="7" height="7"/><rect class="k f" x="56.5" y="62.5" width="7" height="7"/><rect class="k f" x="65.5" y="14.5" width="7" height="7"/><rect class="k f" x="65.5" y="40.5" width="7" height="7"/><rect class="k f" x="65.5" y="62.5" width="7" height="7"/><rect class="k f" x="74.5" y="14.5" width="7" height="7"/><rect class="k f" x="74.5" y="40.5" width="7" height="7"/><rect class="k f" x="74.5" y="62.5" width="7" height="7"/><rect class="k f" x="83.5" y="14.5" width="7" height="7"/><rect class="k f" x="83.5" y="40.5" width="7" height="7"/><rect class="k f" x="83.5" y="62.5" width="7" height="7"/></g><rect class="i" data-s="2" data-i="0" data-a="pop" x="47.5" y="14.5" width="7" height="7"/><rect class="i" data-s="2" data-i="1" data-a="pop" x="56.5" y="14.5" width="7" height="7"/><rect class="i" data-s="3" data-i="0" data-a="pop" x="65.5" y="40.5" width="7" height="7"/><rect class="i" data-s="3" data-i="1" data-a="pop" x="74.5" y="40.5" width="7" height="7"/><rect class="i" data-s="4" data-i="0" data-a="pop" x="47.5" y="62.5" width="7" height="7"/><rect class="i" data-s="4" data-i="1" data-a="pop" x="56.5" y="62.5" width="7" height="7"/><rect class="i" data-s="4" data-i="2" data-a="pop" x="65.5" y="62.5" width="7" height="7"/><rect class="i" data-s="4" data-i="3" data-a="pop" x="74.5" y="62.5" width="7" height="7"/><path class="th" data-s="4" data-i="4" data-a="fade" d="M84 63.5l6 5M90 63.5l-6 5"/><path class="k f" data-s="5" data-i="0" data-a="pop" d="M47.5 78h5l2 2v8h-7z"/><path class="k f" data-s="5" data-i="1" data-a="pop" d="M56.5 78h5l2 2v8h-7z"/><path class="k f" data-s="5" data-i="2" data-a="pop" d="M65.5 78h5l2 2v8h-7z"/><path class="k f" data-s="5" data-i="3" data-a="pop" d="M74.5 78h5l2 2v8h-7z"/><path class="k f mut" data-s="5" data-i="4" data-a="pop" d="M83.5 78h5l2 2v8h-7z"/><g data-s="6" data-a="wipe"><path class="k" d="M93 66H101M98.5 63.5L101 66 98.5 68.5"/></g><g data-s="6" data-a="pop"><path class="k f" d="M103 10H149L156 17V98H103Z"/><path class="k" d="M149 10V17H156"/></g><rect class="k f2" data-s="7" data-i="0" data-a="pop" x="107" y="19" width="45" height="11"/><rect class="k f2" data-s="7" data-i="1" data-a="pop" x="107" y="33" width="45" height="11"/><rect class="k f2" data-s="7" data-i="2" data-a="pop" x="107" y="47" width="45" height="11"/><rect class="ss" data-s="8" data-a="pop" x="107" y="61" width="45" height="11" fill="url(#hatch-docs)"/><path class="s ring" data-s="8" data-a="stamp" d="M152 63.3l3.2 3.2-3.2 3.2-3.2-3.2z"/></svg>
@@ -283,7 +279,7 @@
 
     <!-- ───────────── §04 CONTACT: 3D business card ───────────── -->
     <section class="sec ct" id="contact" aria-labelledby="ct-title">
-      <header class="sec-head"><h2 id="ct-title" class="h2">{{ct.title}}</h2><p class="ct-lead">{{ct.lead}}</p></header>
+      <header class="sec-head"><h2 id="ct-title" class="h2">{{ct.title}}</h2></header>
       <div class="ct-grid">
         <div class="bcard-scene">
           <div class="bcard">
@@ -307,7 +303,6 @@
             <button class="btn btn-line" type="button" data-vcard><span class="bv-idle">{{ct.vcard}}</span><span class="bv-done" aria-hidden="true"><i class="bv-check"></i>{{ct.vcard.done}}</span></button>
             <button class="btn btn-line" type="button" data-share><span>{{ct.share}}</span><i class="share-ic" aria-hidden="true"></i></button>
           </div>
-          <p class="reassure mono">{{cta.reassure}}</p>
           <p class="bc-status mono" role="status" aria-live="polite"></p>
           <section class="parcours" aria-labelledby="pc-title">
             <h3 class="pc-title mono" id="pc-title">{{pc.title}}</h3>

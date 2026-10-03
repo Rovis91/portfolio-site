@@ -729,3 +729,16 @@ html:not(.js) .hl .hl-n0 { display: none; }
 .js:not(.rm) .fit.done .fit-piece, .js:not(.rm) .fit.done .fit-slot { animation: none; }
 .js:not(.rm) .fit.done .fit-tpl .fit-piece { transform: translateY(-18px) rotate(-5deg); }
 .js:not(.rm) .fit.done .fit-ok .fit-piece { transform: none; }
+
+/* rév. 16 — less copy, smaller type on desktop */
+@media (min-width: 900px) {
+  .h2 { font-size: clamp(2.1rem, 5vw, 3.6rem); }
+  .pb-q { font-size: var(--fs-lg); line-height: 1.15; }
+  .pb-a { font-size: var(--fs-base); font-weight: 600; }
+  .ex-one { font-size: var(--fs-lg); line-height: 1.25; }
+  .steps p { font-size: var(--fs-base); }
+  .st-t { font-size: var(--fs-xl); }
+  .fit-card figcaption { font-size: var(--fs-md); }
+}
+.ex-result { margin-top: 0; }
+.pb-a { padding-top: 8px; padding-bottom: 8px; }
