@@ -71,6 +71,20 @@ applyLang(lang, false)
   }
 }
 
+// ─────────────────────────────── key figures band: items come in from the left one after the other, numbers count up.
+// Reduced motion or no JS: the final numbers, still.
+if (!reduced) {
+  const items = $$('.stats-list li')
+  items.forEach((li) => { li.style.opacity = 0; li.style.transform = 'translateX(-32px)' })
+  inView('.stats-list', () => {
+    animate(items, { opacity: [0, 1], transform: ['translateX(-32px)', 'none'] }, { duration: 0.7, delay: stagger(0.18), ease: [0.22, 1, 0.36, 1] })
+    items.forEach((li, i) => {
+      const c = $('.kpi-c', li), to = Number(c.dataset.to)
+      animate(0, to, { duration: 1.4, delay: 0.15 + i * 0.18, ease: 'easeOut', onUpdate: (v) => { c.textContent = Math.round(v) } })
+    })
+  }, { amount: 0.5 })
+}
+
 // ─────────────────────────────── "Sound familiar?": every answer is already on the page.
 // Each glyph plays its problem, then settles on the solved state once, as it reaches the middle of the screen.
 // Visual only: nothing moves in the layout, and the CSS shows the solved state when this never runs.

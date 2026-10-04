@@ -31,6 +31,13 @@ export const content = {
   'h.t6': { fr: 'Relancer les impayés', en: 'Chase unpaid invoices' },
   'h.me': { fr: `${D}Choisir quels devis envoyer`, en: `${D}Choose which quotes to send` },
 
+  // ── key figures band (between hero and §01); the numbers themselves live in index.html
+  'st.1': { fr: 'clients satisfaits', en: 'happy clients' },
+  'st.2.u': { fr: 'ans', en: 'years' },
+  'st.2': { fr: 'd’automatisation sur mesure', en: 'of custom automation' },
+  'st.3': { fr: 'gagnées chaque semaine chez mes clients', en: 'saved every week for my clients' },
+  'st.note': { fr: 'Cumul de 3 projets, sur des équipes de 2 à 5&nbsp;personnes (10 au total)&nbsp;: environ 2&nbsp;h&nbsp;30 par personne et par semaine.', en: 'Across 3 projects, with teams of 2 to 5 people (10 in all): about 2.5 hours per person per week.' },
+
   // ── §01 problems (the client's words) → what changes for them
   'pb.title': { fr: 'Ça vous parle&nbsp;?', en: 'Sound familiar?' },
   'pb.1': { fr: 'Vous avez essayé l’IA, mais rien n’est resté.', en: 'You tried AI, but nothing stuck.' },
@@ -56,13 +63,19 @@ export const content = {
   'mt.s3': { fr: 'Vous testez, l’outil est corrigé jusqu’à ce qu’il colle.', en: 'You test it, we adjust until it fits.' },
 
   // ── §03 examples: one 3D demo + one sentence each
-  'wk.title': { fr: 'Trois projets, trois métiers.', en: 'Three projects, three industries.' },
+  'wk.title': { fr: 'Trois réalisations, chez trois clients.', en: 'Three projects, for three real clients.' },
   'wk.proj': { fr: 'Projet', en: 'Project' },
 
   'c1.name': { fr: 'E-commerce international', en: 'International e-commerce' },
   'c2.name': { fr: 'Agence de talents', en: 'Talent agency' },
   'c3.name': { fr: 'Assurance &amp; placements', en: 'Insurance &amp; investments' },
   'c1.result': { fr: 'Environ 12&nbsp;h de reporting par semaine en moins', en: 'About 12 hours of weekly reporting saved' },
+  'c1.k1.n': { fr: '~600&nbsp;h', en: '~600&nbsp;h' },
+  'c1.k1': { fr: 'rendues à l’équipe par an', en: 'handed back to the team each year' },
+  'c1.k2.n': { fr: '4 + 3', en: '4 + 3' },
+  'c1.k2': { fr: 'boutiques et comptes pub dans un seul écran', en: 'stores and ad accounts on one screen' },
+  'c1.k3.n': { fr: '−80&nbsp;%', en: '−80%' },
+  'c1.k3': { fr: 'd’appels API grâce au cache', en: 'API calls, thanks to the cache' },
   'c1.one': { fr: 'Une application interne réunit boutiques, publicités et fichiers.', en: 'An internal app brings stores, ads and files together.' },
   'c1.in1': { fr: 'Shopify', en: 'Shopify' },
   'c1.in1.sub': { fr: 'commandes', en: 'orders' },
@@ -83,6 +96,12 @@ export const content = {
   'c1.o3.tip': { fr: 'Les images sont générées, puis une personne les valide avant usage.', en: 'Images are generated, then a person approves them before use.' },
 
   'c2.result': { fr: 'Une sélection de talents en 20&nbsp;min au lieu de 2&nbsp;h', en: 'A talent shortlist in 20&nbsp;min instead of 2&nbsp;h' },
+  'c2.k1.n': { fr: '−83&nbsp;%', en: '−83%' },
+  'c2.k1': { fr: 'de temps par sélection', en: 'time per shortlist' },
+  'c2.k2.n': { fr: '~35&nbsp;h', en: '~35&nbsp;h' },
+  'c2.k2': { fr: 'rendues chaque mois', en: 'handed back every month' },
+  'c2.k3.n': { fr: '~150', en: '~150' },
+  'c2.k3': { fr: 'e-mails par mois envoyés sans intervention', en: 'emails a month sent without anyone touching them' },
   'c2.one': { fr: 'Une app Airtable filtre les talents et envoie les e-mails. Le choix final reste à la responsable.', en: 'An Airtable app filters talent and sends the emails. The final call stays with the manager.' },
   'c2.pool': { fr: 'Vivier', en: 'Talent pool' },
   'c2.in': { fr: 'Brief client', en: 'Client brief' },
@@ -99,6 +118,12 @@ export const content = {
   'c2.o3.tip': { fr: 'Les rappels partent seuls, eux aussi.', en: 'Reminders go out on their own too.' },
 
   'c3.result': { fr: 'Un dossier client en 10&nbsp;min au lieu de 1&nbsp;h&nbsp;30', en: 'A client file in 10&nbsp;min instead of 1&nbsp;h&nbsp;30' },
+  'c3.k1.n': { fr: '−89&nbsp;%', en: '−89%' },
+  'c3.k1': { fr: 'de temps par dossier', en: 'time per client file' },
+  'c3.k2.n': { fr: '~27&nbsp;h', en: '~27&nbsp;h' },
+  'c3.k2': { fr: 'rendues chaque mois', en: 'handed back every month' },
+  'c3.k3.n': { fr: '0', en: '0' },
+  'c3.k3': { fr: 'section oubliée dans les dossiers réglementaires', en: 'sections missed in regulatory files' },
   'c3.one': { fr: 'Les dossiers clients s’assemblent seuls, puis sortent en PDF.', en: 'Client files assemble themselves, then come out as a PDF.' },
   'c3.in1': { fr: 'Contrat', en: 'Contract' },
   'c3.in1.tip': { fr: 'Le type de contrat détermine une partie des sections.', en: 'The contract type decides some of the sections.' },
@@ -124,7 +149,7 @@ export const content = {
   // ── §04 contact: 3D business card
   'ct.title': { fr: 'Parlons de votre projet.', en: 'Let’s talk about your project.' },
   'ct.book': { fr: 'Réserver un appel de 30&nbsp;min', en: 'Book a 30-min call' },
-  'ct.role': { fr: 'IA &amp; automatisation pour PME', en: 'AI &amp; automation for SMEs' },
+  'ct.role': { fr: 'IA &amp; automatisation sur mesure', en: 'Custom AI &amp; automation' },
   'ct.back': { fr: 'Un outil à votre mesure.', en: 'A tool cut to fit you.' },
   'ct.share': { fr: 'Partager', en: 'Share' },
   'ct.vcard': { fr: 'Ajouter aux contacts', en: 'Add to contacts' },

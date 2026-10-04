@@ -244,8 +244,8 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
 @media (min-width: 1024px) {
   .hero {
     grid-template-columns: minmax(0, 6fr) minmax(0, 6fr);
-    column-gap: 48px; row-gap: 32px; padding: 48px max(var(--g), 32px) 80px;
-    min-height: min(calc(100svh - var(--head)), 900px); align-content: center;
+    column-gap: 48px; row-gap: 32px; padding: 40px max(var(--g), 32px) 56px;
+    align-content: start;
   }
   .hero { grid-template-rows: auto auto 1fr; }
   .hero-text { grid-column: 1; grid-row: 1; align-self: start; }
@@ -264,8 +264,11 @@ a:hover { text-decoration-color: currentColor; text-decoration-thickness: 2px; }
 .sec { padding: 56px var(--g); max-width: var(--maxw); margin: 0 auto; position: relative; }
 .sec-head { display: grid; gap: 16px; margin-bottom: 36px; }
 @media (min-width: 1024px) {
-  .sec { padding: 128px max(var(--g), 32px); }
-  .sec-head { margin-bottom: 64px; }
+  .sec { padding: 88px max(var(--g), 32px); }
+  .sec-head { margin-bottom: 48px; }
+  /* method on a tinted full-width band, so it reads as its own section between §01 and the dark examples */
+  .tint { background: var(--paper-2); max-width: none; }
+  .tint { padding-left: max(var(--g), 32px, calc((100% - var(--maxw)) / 2 + 32px)); padding-right: max(var(--g), 32px, calc((100% - var(--maxw)) / 2 + 32px)); }
 }
 
 /* §01 problems → what I do. A plain list: every answer is visible, the answer outweighs the problem. */
@@ -742,3 +745,25 @@ html:not(.js) .hl .hl-n0 { display: none; }
 }
 .ex-result { margin-top: 0; }
 .pb-a { padding-top: 8px; padding-bottom: 8px; }
+
+/* examples: key figures — section banner + per-project row */
+.kpi-n { display: block; font-family: var(--f); font-weight: 800; font-stretch: 70%; line-height: 1; letter-spacing: 0; color: var(--paper); }
+.kpi-l { display: block; margin-top: 6px; font-family: var(--m); font-size: var(--fs-xs); letter-spacing: 0.03em; line-height: 1.35; color: var(--night-mute); text-wrap: pretty; }
+.stats-list, .ex-kpi { list-style: none; margin: 0; padding: 0; display: grid; }
+.stats { padding: 40px var(--g); }
+.stats-list { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.stats-list li { position: relative; padding-left: 12px; }
+.stats-list li::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 1px; background: var(--night-rule); transform-origin: top; }
+.stats-list .kpi-n { font-size: var(--fs-h3); white-space: nowrap; font-variant-numeric: tabular-nums; }
+.stats-list .kpi-l { max-width: 22ch; }
+.stats-list .st-tip { position: relative; display: inline-grid; place-items: center; width: 14px; height: 14px; margin-left: 4px; vertical-align: top; border-radius: 50%; background: transparent; box-shadow: inset 0 0 0 1px var(--night-mute); color: var(--night-mute); font-family: var(--m); font-size: 9px; font-weight: 600; text-transform: none; text-decoration: none; line-height: 1; }
+.stats-list .st-tip:hover, .stats-list .st-tip[aria-expanded="true"] { background: var(--paper); color: var(--ink); box-shadow: none; }
+.st-tipbox { top: calc(100% + 10px); right: 0; max-width: min(260px, 70vw); white-space: normal; background: var(--paper); color: var(--ink); font-family: var(--f); font-size: var(--fs-sm); font-weight: 500; font-stretch: 100%; letter-spacing: 0; box-shadow: 3px 3px 0 var(--night-mute); }
+@media (min-width: 700px) { .stats-list { gap: 48px; } .stats-list li { padding-left: 20px; } }
+.ex-kpi { grid-column: 1; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; max-width: 34rem; }
+.ex-kpi .kpi-n { font-size: var(--fs-xl); }
+@media (min-width: 1024px) {
+  .stats { padding: 56px max(var(--g), 32px); }
+  .ex { grid-template-rows: auto auto auto 1fr; }
+  .ex .plate { grid-row: 1 / span 4; }
+}
