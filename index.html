@@ -10,6 +10,7 @@
   <meta name="author" content="Antoine Hostier" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <link rel="canonical" href="%VITE_SITE_URL%/" />
+  <link rel="alternate" type="text/markdown" href="/index.md" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Antoine Hostier" />
   <meta property="og:title" content="Antoine Hostier — IA et automatisation sur mesure" />
@@ -51,7 +52,11 @@
         "founder": { "@id": "%VITE_SITE_URL%/#antoine" },
         "address": { "@type": "PostalAddress", "streetAddress": "9 rue des Colonnes", "postalCode": "75002", "addressLocality": "Paris", "addressCountry": "FR" },
         "areaServed": "FR",
-        "availableLanguage": ["fr", "en"]
+        "availableLanguage": ["fr", "en"],
+        "makesOffer": [
+          { "@type": "Offer", "name": "Free 30-minute discovery call", "price": "0", "priceCurrency": "EUR", "url": "https://calendly.com/antoine-rtc3/30min" },
+          { "@type": "Offer", "name": "Custom AI tool or automation (fixed quote per project)", "priceSpecification": { "@type": "PriceSpecification", "priceCurrency": "EUR" }, "url": "%VITE_SITE_URL%/" }
+        ]
       }
     ]
   }

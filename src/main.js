@@ -331,3 +331,21 @@ matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change', (e) =>
   else { root.classList.remove('rm'); document.dispatchEvent(new CustomEvent('ah:unreduce')) }
 })
 
+
+// WebMCP: expose in-page tools to browser agents (no-op where unsupported).
+const mc = document.modelContext || navigator.modelContext
+if (mc?.registerTool) {
+  const text = (t) => ({ content: [{ type: 'text', text: t }] })
+  mc.registerTool({
+    name: 'get_contact',
+    description: 'Get Antoine Hostier (DirectivAI, freelance AI/automation consultant, Paris) contact details.',
+    inputSchema: { type: 'object', properties: {} },
+    execute: async () => text('Email: netechoppe@proton.me | LinkedIn: https://www.linkedin.com/in/antoine-hostier | GitHub: https://github.com/Rovis91 | Malt: https://www.malt.fr/profile/antoinehostier')
+  })
+  mc.registerTool({
+    name: 'book_call',
+    description: 'Get the link to book a free 30-minute discovery call.',
+    inputSchema: { type: 'object', properties: {} },
+    execute: async () => text('https://calendly.com/antoine-rtc3/30min')
+  })
+}
